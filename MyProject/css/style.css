@@ -1,0 +1,618 @@
+
+
+* {
+  margin: 0;
+}html, 
+body {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+	background: #564e47 url('../img/game-wrap-bg.png');
+	
+	color: #9A998E;
+  
+	font-size: 14px;
+  
+	line-height: 1.2em;
+	
+	font-family: 'Alegreya Sans SC', Tahoma, Arial, sans-serif;
+  
+	font-weight: normal;
+
+     }
+
+
+.page 
+{
+
+	width: 100%;
+  
+	min-width: 640px;
+  
+	min-height: 640px;
+  
+	margin: 0 auto -40px;
+  
+	text-align: center;
+  
+	overflow: hidden;
+
+}
+  
+.page a.logo 
+{
+    margin: 8% auto 20px;
+    padding-top: 63px;
+    background: transparent url('../img/logo.png') center top no-repeat;
+    display: block;
+}
+    
+.page a.logo img 
+{
+      
+	vertical-align: top;
+    
+}
+
+#game-wrap 
+{
+	
+	width: 1200px;
+  
+	height: 734px;
+  
+	margin: 0 auto;
+  
+	background: transparent url("../img/game-bg.jpg") center center no-repeat;
+  
+  	background-size: contain;
+  
+	position: relative;
+}
+
+#game-wrap .basket 
+{
+    
+	width: 80px;
+    
+	height: 80px;
+    
+	position: absolute;
+  
+}
+    
+#game-wrap[data-bx="0"][data-by="1"] .basket 
+{
+      width: 162px;
+      height: 154px;
+      background: transparent url('../img/basket-p-0-1.png') center center no-repeat;
+      background-size: contain;
+      top: 332px;
+      left: 268px;
+}
+    
+#game-wrap[data-bx="1"][data-by="1"] .basket 
+{
+      width: 382px;
+      height: 167px;
+      background: transparent url('../img/basket-p-1-1.png') center center no-repeat;
+      background-size: contain;
+      top: 345px;
+      right: 150px;
+}
+    
+#game-wrap[data-bx="0"][data-by="0"] .basket 
+{
+      width: 385px;
+      height: 141px;
+      background: transparent url('../img/basket-p-0-0.png') center center no-repeat;
+      background-size: contain;
+      left: 154px;
+      bottom: 100px;
+}
+    
+#game-wrap[data-bx="1"][data-by="0"] .basket 
+{
+      width: 457px;
+      height: 134px;
+      background: transparent url('../img/basket-p-1-0.png') center center no-repeat;
+      background-size: contain;
+      right: 126px;
+      bottom: 92px;
+}
+
+#game-wrap .wolf 
+{
+    
+	width: 50px;
+    
+	height: 140px;
+    
+	position: absolute;
+  
+}
+    
+#game-wrap[data-bx="0"] .wolf 
+{
+      width: 214px;
+      height: 309px;
+      top: 350px;
+      left: 371px;
+      background: transparent url('../img/wolf-p-0.png') center center no-repeat;
+      background-size: contain;
+}
+    
+#game-wrap[data-bx="1"] .wolf 
+{
+      width: 544px;
+      height: 302px;
+      top: 350px;
+      right: 214px;
+      background: transparent url('../img/wolf-p-1.png') center center no-repeat;
+      background-size: contain;
+}
+/*
+   * Egg
+   */
+  
+#game-wrap .egg 
+{
+    width: 32px;
+    height: 31px;
+    background: transparent url('../img/egg.png') center center no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+    
+#game-wrap[data-egg-0="0"] .egg.e-0,
+    
+#game-wrap[data-egg-1="0"] .egg.e-1,
+    
+#game-wrap[data-egg-2="0"] .egg.e-2,
+    
+#game-wrap[data-egg-3="0"] .egg.e-3 
+{
+      
+	display: none;
+    
+}
+
+    
+/* Egg bottom-left */
+    
+#game-wrap[data-egg-0="1"] .egg.e-0 
+{
+      top: 410px;
+      left: 97px;
+      -moz-transform:rotate(65deg);
+      -webkit-transform:rotate(65deg);
+      -o-transform:rotate(65deg);
+      -ms-transform:rotate(65deg);
+      transform: rotate(65deg);
+}
+    
+#game-wrap[data-egg-0="2"] .egg.e-0 
+{
+      top: 430px;
+      left: 131px;
+      -moz-transform:rotate(118deg);
+      -webkit-transform:rotate(118deg);
+      -o-transform:rotate(118deg);
+      -ms-transform:rotate(118deg);
+      transform: rotate(118deg);
+}
+    
+#game-wrap[data-egg-0="3"] .egg.e-0 
+{
+      top: 453px;
+      left: 167px;
+      -moz-transform:rotate(162deg);
+      -webkit-transform:rotate(162deg);
+      -o-transform:rotate(162deg);
+      -ms-transform:rotate(162deg);
+      transform: rotate(162deg);
+}
+    
+#game-wrap[data-egg-0="4"] .egg.e-0 
+{
+      top: 470px;
+      left: 201px;
+      -moz-transform:rotate(-93deg);
+      -webkit-transform:rotate(-93deg);
+      -o-transform:rotate(-93deg);
+      -ms-transform:rotate(-93deg);
+      transform: rotate(-93deg);
+}
+    
+#game-wrap[data-egg-0="5"] .egg.e-0 
+{
+      top: 495px;
+      left: 228px;
+      -moz-transform:rotate(-7deg);
+      -webkit-transform:rotate(-7deg);
+      -o-transform:rotate(-7deg);
+      -ms-transform:rotate(-7deg);
+      transform: rotate(-7deg);
+}
+
+    
+/* Egg top-left */
+    
+#game-wrap[data-egg-1="1"] .egg.e-1 
+{
+      top: 257px;
+      left: 98px;
+      -moz-transform:rotate(56deg);
+      -webkit-transform:rotate(56deg);
+      -o-transform:rotate(56deg);
+      -ms-transform:rotate(56deg);
+      transform: rotate(56deg);
+}
+    
+#game-wrap[data-egg-1="2"] .egg.e-1 
+{
+      top: 278px;
+      left: 131px;
+      -moz-transform:rotate(108deg);
+      -webkit-transform:rotate(108deg);
+      -o-transform:rotate(108deg);
+      -ms-transform:rotate(108deg);
+      transform: rotate(108deg);
+}
+    
+#game-wrap[data-egg-1="3"] .egg.e-1 
+{
+      top: 299px;
+      left: 168px;
+      -moz-transform:rotate(192deg);
+      -webkit-transform:rotate(192deg);
+      -o-transform:rotate(192deg);
+      -ms-transform:rotate(192deg);
+      transform: rotate(192deg);
+}
+    
+#game-wrap[data-egg-1="4"] .egg.e-1 
+{
+      top: 318px;
+      left: 201px;
+      -moz-transform:rotate(-62deg);
+      -webkit-transform:rotate(-62deg);
+      -o-transform:rotate(-62deg);
+      -ms-transform:rotate(-62deg);
+      transform: rotate(-62deg);
+}
+    
+#game-wrap[data-egg-1="5"] .egg.e-1 
+{
+      top: 337px;
+      left: 233px;
+}
+
+    
+/* Egg top-right */
+    
+#game-wrap[data-egg-2="1"] .egg.e-2 
+{
+      top: 255px;
+      right: 106px;
+      -moz-transform:rotate(-10deg);
+      -webkit-transform:rotate(-10deg);
+      -o-transform:rotate(-10deg);
+      -ms-transform:rotate(-10deg);
+      transform: rotate(-10deg);
+}
+    
+#game-wrap[data-egg-2="2"] .egg.e-2 
+{
+      top: 278px;
+      right: 138px;
+      -moz-transform:rotate(-56deg);
+      -webkit-transform:rotate(-56deg);
+      -o-transform:rotate(-56deg);
+      -ms-transform:rotate(-56deg);
+      transform: rotate(-56deg);
+}
+    
+#game-wrap[data-egg-2="3"] .egg.e-2 
+{
+      top: 300px;
+      right: 176px;
+      -moz-transform:rotate(-128deg);
+      -webkit-transform:rotate(-128deg);
+      -o-transform:rotate(-128deg);
+      -ms-transform:rotate(-128deg);
+      transform: rotate(-128deg);
+}
+    
+#game-wrap[data-egg-2="4"] .egg.e-2 
+{
+      top: 315px;
+      right: 208px;
+      -moz-transform:rotate(140deg);
+      -webkit-transform:rotate(140deg);
+      -o-transform:rotate(140deg);
+      -ms-transform:rotate(140deg);
+      transform: rotate(140deg);
+}
+    
+#game-wrap[data-egg-2="5"] .egg.e-2 
+{
+      top: 336px;
+      right: 237px;
+      -moz-transform:rotate(58deg);
+      -webkit-transform:rotate(58deg);
+      -o-transform:rotate(58deg);
+      -ms-transform:rotate(58deg);
+      transform: rotate(58deg);
+}
+
+    
+/* Egg bottom-right */
+    
+#game-wrap[data-egg-3="1"] .egg.e-3 
+{
+      top: 410px;
+      right: 106px;
+      -moz-transform:rotate(-14deg);
+      -webkit-transform:rotate(-14deg);
+      -o-transform:rotate(-14deg);
+      -ms-transform:rotate(-14deg);
+      transform: rotate(-14deg);
+}
+    
+#game-wrap[data-egg-3="2"] .egg.e-3 
+{
+      top: 430px;
+      right: 136px;
+      -moz-transform:rotate(-53deg);
+      -webkit-transform:rotate(-53deg);
+      -o-transform:rotate(-53deg);
+      -ms-transform:rotate(-53deg);
+      transform: rotate(-53deg);
+}
+    
+#game-wrap[data-egg-3="3"] .egg.e-3 
+{
+      top: 453px;
+      right: 173px;
+      -moz-transform:rotate(-96deg);
+      -webkit-transform:rotate(-96deg);
+      -o-transform:rotate(-96deg);
+      -ms-transform:rotate(-96deg);
+      transform: rotate(-96deg);
+}
+    
+#game-wrap[data-egg-3="4"] .egg.e-3 
+{
+      top: 468px;
+      right: 208px;
+      -moz-transform:rotate(152deg);
+      -webkit-transform:rotate(152deg);
+      -o-transform:rotate(152deg);
+      -ms-transform:rotate(152deg);
+      transform: rotate(152deg);
+}
+    
+#game-wrap[data-egg-3="5"] .egg.e-3 
+{
+      top: 495px;
+      right: 233px;
+      -moz-transform:rotate(68deg);
+      -webkit-transform:rotate(68deg);
+      -o-transform:rotate(68deg);
+      -ms-transform:rotate(68deg);
+      transform: rotate(68deg);
+}
+
+  
+#game-wrap #score 
+{
+    position: absolute;
+    top: 163px;
+    left: 736px;
+}
+    
+#game-wrap #score ul 
+{
+      
+	margin: 0;
+      
+	padding: 0;
+      
+	list-style: none;
+      
+	display: inline-block;
+    
+}
+      
+#game-wrap #score ul > li 
+{
+        
+	width: 31px;
+        
+	height: 47px;
+        
+	margin: 0 0 0 -2px;
+        
+	background: transparent url('../img/num-bg.png');
+        
+	display: inline-block;
+        vertical-align: top;
+      
+}
+      
+#game-wrap #score ul > li span 
+{
+        
+	width: 100%;
+        
+	height: 100%;
+        
+	background: transparent url('../img/nums.png');
+        
+	background-position: 0px 0px;
+        
+	text-indent: -200px;
+        
+	display: block;
+        
+	overflow: hidden;
+      
+}
+      
+#game-wrap #score ul > li.n-0 span 
+{
+        
+	background-position: 0px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-1 span 
+{
+        
+	background-position: -31px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-2 span 
+{
+        
+	background-position: -62px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-3 span 
+{
+        
+	background-position: -93px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-4 span 
+{
+        
+	background-position: -124px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-5 span 
+{
+        
+	background-position: -155px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-6 span 
+{
+        
+	background-position: -186px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-7 span 
+{
+        
+	background-position: -217px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-8 span 
+{
+        
+	background-position: -248px 0px;
+      
+}
+      
+#game-wrap #score ul > li.n-9 span 
+{
+        
+	background-position: -279px 0px;
+      
+}
+
+  
+#game-wrap #loss 
+{
+    width: 235px;
+    height: 66px;
+    background: transparent url('../img/loss.png') left top no-repeat;
+    position: absolute;
+    top: 241px;
+    left: 686px;
+    background-size: cover;
+}
+    
+#game-wrap[data-loss="0"] #loss 
+{
+      
+	width: 0;
+    
+}
+  
+#game-wrap[data-loss="1"] #loss 
+{
+      width: 80px;
+}
+    
+#game-wrap[data-loss="2"] #loss 
+{
+      width: 160px;
+}
+    
+#game-wrap[data-loss="3"] #loss 
+{
+      width: 235px;
+}
+
+#message 
+{
+    
+	width: 100%;
+    
+	height: 100%;
+    
+	background: transparent url('../img/game-over-bg.png');
+    
+	position: relative;
+    
+	display: none;
+    
+	overflow: hidden;
+  
+}
+    
+#message > div 
+{
+      
+	margin-top: 134px;
+      
+	padding: 5px 0 15px;
+      
+	background: #564E47;
+      
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    
+}
+      
+#message > div p 
+{
+        
+	font-size: 16px;
+      
+}
+
+  
+#game-wrap img 
+{
+  	
+	vertical-align: top;
+  
+}
